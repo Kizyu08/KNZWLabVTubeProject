@@ -11,6 +11,10 @@ public class KinectAvatar : MonoBehaviour
 
     //自分の関節とUnityちゃんのボーンを入れるよう
     [SerializeField] GameObject Ref;
+
+    [SerializeField] GameObject GoHead;
+    [SerializeField] GameObject GoNeck;
+
     [SerializeField] GameObject LeftUpLeg;
     [SerializeField] GameObject LeftLeg;
     [SerializeField] GameObject RightUpLeg;
@@ -46,6 +50,10 @@ public class KinectAvatar : MonoBehaviour
         Quaternion SpineBase;
         Quaternion SpineMid;
         Quaternion SpineShoulder;
+
+        Quaternion Head;
+        Quaternion Neck;
+
         Quaternion ShoulderLeft;
         Quaternion ShoulderRight;
         Quaternion ElbowLeft;
@@ -75,6 +83,14 @@ public class KinectAvatar : MonoBehaviour
                   joints[JointType.SpineBase].Orientation.ToMirror().ToQuaternion(comp);
                 SpineMid =
                   joints[JointType.SpineMid].Orientation.ToMirror().ToQuaternion(comp);
+
+                Head =
+                  joints[JointType.Head].Orientation.ToMirror().ToQuaternion(comp);
+                  //joints[JointType.ElbowLeft].Orientation.ToMirror().ToQuaternion(comp);
+                Neck =
+                  //joints[JointType.HandLeft].Orientation.ToMirror().ToQuaternion(comp);
+                  joints[JointType.Neck].Orientation.ToMirror().ToQuaternion(comp);
+
                 SpineShoulder =
                   joints[JointType.SpineShoulder].Orientation.ToMirror().ToQuaternion(comp);
                 ShoulderLeft =
@@ -109,6 +125,12 @@ public class KinectAvatar : MonoBehaviour
                   joints[JointType.SpineBase].Orientation.ToQuaternion(comp);
                 SpineMid =
                   joints[JointType.SpineMid].Orientation.ToQuaternion(comp);
+
+                Head =
+                  joints[JointType.Head].Orientation.ToQuaternion(comp);
+                Neck =
+                  joints[JointType.Neck].Orientation.ToQuaternion(comp);
+
                 SpineShoulder =
                   joints[JointType.SpineShoulder].Orientation.ToQuaternion(comp);
                 ShoulderLeft =
@@ -162,6 +184,8 @@ public class KinectAvatar : MonoBehaviour
             LeftLeg.transform.rotation = AnkleLeft *
                             Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
 
+            GoHead.transform.rotation = Head * comp2;
+            GoNeck.transform.rotation = Neck * comp2;
             // モデルの回転を設定する
             transform.rotation = q;
 
