@@ -22,6 +22,7 @@ public class KinectAvatar : MonoBehaviour
     [SerializeField] GameObject RightArm;
     [SerializeField] GameObject RightForeArm;
     [SerializeField] GameObject RightHand;
+    [SerializeField] int PosScale;
 
     [SerializeField] bool IsMirror;
 
@@ -167,6 +168,8 @@ public class KinectAvatar : MonoBehaviour
             // モデルの位置を移動する
             pos = body.Joints[JointType.SpineMid].Position;
             Ref.transform.position = new Vector3(-pos.X, pos.Y, -pos.Z);
+            Ref.transform.position = new Vector3(-pos.X*PosScale, pos.Y*PosScale, -pos.Z*PosScale);
+            
         }
     }
 }
