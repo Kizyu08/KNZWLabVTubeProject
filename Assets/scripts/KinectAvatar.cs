@@ -117,6 +117,7 @@ public class KinectAvatar : MonoBehaviour
                   joints[JointType.KneeLeft].Orientation.ToMirror().ToQuaternion(comp);
                 AnkleRight =
                   joints[JointType.AnkleLeft].Orientation.ToMirror().ToQuaternion(comp);
+                
             }
             // そのまま
             else
@@ -157,7 +158,12 @@ public class KinectAvatar : MonoBehaviour
                   joints[JointType.KneeRight].Orientation.ToQuaternion(comp);
                 AnkleRight =
                   joints[JointType.AnkleRight].Orientation.ToQuaternion(comp);
+                  
             }
+
+            print("ElbowLeft x:" + ElbowLeft.x + " y" + ElbowLeft.y + " z:" + ElbowLeft.z + " w:" + ElbowLeft.w);
+            print("Neck x:" + Neck.x + " y" + Neck.y + " z:" + Neck.z + " w:" + Neck.w);
+
             // 関節の回転を計算する 
             q = transform.rotation;
             transform.rotation = Quaternion.identity;
@@ -191,7 +197,7 @@ public class KinectAvatar : MonoBehaviour
 
             // モデルの位置を移動する
             pos = body.Joints[JointType.SpineMid].Position;
-            Ref.transform.position = new Vector3(-pos.X, pos.Y, -pos.Z);
+            print("(" + pos.X + "," + pos.Y + "," + pos.Z + ")");
             Ref.transform.position = new Vector3(-pos.X*PosScale, pos.Y*PosScale, -pos.Z*PosScale);
             
         }
