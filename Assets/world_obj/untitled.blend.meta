@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 4843ca6476dbd2f40a9b6a71121e6abe
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: chunk_1_-33_001
+    100002: chunk_1_-34_001
+    100004: chunk_1_-35_001
+    100006: chunk_1_-36_001
+    100008: chunk_1_-37_001
+    100010: chunk_1_-38_001
+    100012: chunk_2_-33_001
+    100014: chunk_2_-34_001
+    100016: chunk_2_-35_001
+    100018: chunk_2_-36_001
+    100020: chunk_2_-37_001
+    100022: chunk_2_-38_001
+    100024: chunk_3_-33_001
+    100026: chunk_3_-34_001
+    100028: chunk_3_-35_001
+    100030: chunk_3_-36_001
+    100032: chunk_3_-37_001
+    100034: chunk_3_-38_001
+    100036: chunk_4_-33_001
+    100038: chunk_4_-34_001
+    100040: chunk_4_-35_001
+    100042: chunk_4_-36_001
+    100044: chunk_4_-37_001
+    100046: chunk_4_-38_001
+    100048: chunk_5_-33_001
+    100050: chunk_5_-34_001
+    100052: chunk_5_-35_001
+    100054: chunk_5_-36_001
+    100056: chunk_5_-37_001
+    100058: chunk_5_-38_001
+    100060: chunk_6_-33_001
+    100062: chunk_6_-34_001
+    100064: chunk_6_-35_001
+    100066: chunk_6_-36_001
+    100068: chunk_6_-37_001
+    100070: chunk_6_-38_001
+    100072: //RootNode
+    400000: chunk_1_-33_001
+    400002: chunk_1_-34_001
+    400004: chunk_1_-35_001
+    400006: chunk_1_-36_001
+    400008: chunk_1_-37_001
+    400010: chunk_1_-38_001
+    400012: chunk_2_-33_001
+    400014: chunk_2_-34_001
+    400016: chunk_2_-35_001
+    400018: chunk_2_-36_001
+    400020: chunk_2_-37_001
+    400022: chunk_2_-38_001
+    400024: chunk_3_-33_001
+    400026: chunk_3_-34_001
+    400028: chunk_3_-35_001
+    400030: chunk_3_-36_001
+    400032: chunk_3_-37_001
+    400034: chunk_3_-38_001
+    400036: chunk_4_-33_001
+    400038: chunk_4_-34_001
+    400040: chunk_4_-35_001
+    400042: chunk_4_-36_001
+    400044: chunk_4_-37_001
+    400046: chunk_4_-38_001
+    400048: chunk_5_-33_001
+    400050: chunk_5_-34_001
+    400052: chunk_5_-35_001
+    400054: chunk_5_-36_001
+    400056: chunk_5_-37_001
+    400058: chunk_5_-38_001
+    400060: chunk_6_-33_001
+    400062: chunk_6_-34_001
+    400064: chunk_6_-35_001
+    400066: chunk_6_-36_001
+    400068: chunk_6_-37_001
+    400070: chunk_6_-38_001
+    400072: //RootNode
+    2100000: water_001__water_png
+    2100002: clay_001__clay_png
+    2100004: dirt_001__dirt_png
+    2100006: dirt_grass_side_001__dirt_grass_side_png
+    2100008: dirt_grass_top_001__dirt_grass_top_png
+    2100010: gravel_001__gravel_png
+    2100012: leaves_oak_001__leaves_oak_png
+    2100014: log_oak_side_001__log_oak_side_png
+    2100016: log_oak_top_001__log_oak_top_png
+    2100018: plank_oak_001__plank_oak_png
+    2100020: sand_001__sand_png
+    2100022: sapling_oak_001__sapling_oak_png
+    2100024: stone_001__stone_png
+    2100026: stone_diorite_001__stone_diorite_png
+    2100028: torch_001__torch_png
+    2100030: torch_flame_001__torch_flame_png
+    2100032: coal_ore_001__coal_ore_png
+    2100034: flower_yellow_001__flower_yellow_png
+    2100036: iron_ore_001__iron_ore_png
+    2100038: obsidian_001__obsidian_png
+    2100040: sandstone_bottom_001__sandstone_bottom_png
+    2100042: sandstone_side_001__sandstone_side_png
+    2100044: sandstone_top_001__sandstone_top_png
+    2100046: sign_001__sign_png
+    2100048: stone_andesite_001__stone_andesite_png
+    2100050: stone_granite_001__stone_granite_png
+    2100052: furnace_front_001__furnace_front_png
+    2100054: furnace_side_001__furnace_side_png
+    2100056: furnace_top_001__furnace_top_png
+    2100058: largechest_001__largechest_png
+    2100060: workbench_back_001__workbench_back_png
+    2100062: workbench_front_001__workbench_front_png
+    2100064: workbench_top_001__workbench_top_png
+    2300000: chunk_1_-33_001
+    2300002: chunk_1_-34_001
+    2300004: chunk_1_-35_001
+    2300006: chunk_1_-36_001
+    2300008: chunk_1_-37_001
+    2300010: chunk_1_-38_001
+    2300012: chunk_2_-33_001
+    2300014: chunk_2_-34_001
+    2300016: chunk_2_-35_001
+    2300018: chunk_2_-36_001
+    2300020: chunk_2_-37_001
+    2300022: chunk_2_-38_001
+    2300024: chunk_3_-33_001
+    2300026: chunk_3_-34_001
+    2300028: chunk_3_-35_001
+    2300030: chunk_3_-36_001
+    2300032: chunk_3_-37_001
+    2300034: chunk_3_-38_001
+    2300036: chunk_4_-33_001
+    2300038: chunk_4_-34_001
+    2300040: chunk_4_-35_001
+    2300042: chunk_4_-36_001
+    2300044: chunk_4_-37_001
+    2300046: chunk_4_-38_001
+    2300048: chunk_5_-33_001
+    2300050: chunk_5_-34_001
+    2300052: chunk_5_-35_001
+    2300054: chunk_5_-36_001
+    2300056: chunk_5_-37_001
+    2300058: chunk_5_-38_001
+    2300060: chunk_6_-33_001
+    2300062: chunk_6_-34_001
+    2300064: chunk_6_-35_001
+    2300066: chunk_6_-36_001
+    2300068: chunk_6_-37_001
+    2300070: chunk_6_-38_001
+    3300000: chunk_1_-33_001
+    3300002: chunk_1_-34_001
+    3300004: chunk_1_-35_001
+    3300006: chunk_1_-36_001
+    3300008: chunk_1_-37_001
+    3300010: chunk_1_-38_001
+    3300012: chunk_2_-33_001
+    3300014: chunk_2_-34_001
+    3300016: chunk_2_-35_001
+    3300018: chunk_2_-36_001
+    3300020: chunk_2_-37_001
+    3300022: chunk_2_-38_001
+    3300024: chunk_3_-33_001
+    3300026: chunk_3_-34_001
+    3300028: chunk_3_-35_001
+    3300030: chunk_3_-36_001
+    3300032: chunk_3_-37_001
+    3300034: chunk_3_-38_001
+    3300036: chunk_4_-33_001
+    3300038: chunk_4_-34_001
+    3300040: chunk_4_-35_001
+    3300042: chunk_4_-36_001
+    3300044: chunk_4_-37_001
+    3300046: chunk_4_-38_001
+    3300048: chunk_5_-33_001
+    3300050: chunk_5_-34_001
+    3300052: chunk_5_-35_001
+    3300054: chunk_5_-36_001
+    3300056: chunk_5_-37_001
+    3300058: chunk_5_-38_001
+    3300060: chunk_6_-33_001
+    3300062: chunk_6_-34_001
+    3300064: chunk_6_-35_001
+    3300066: chunk_6_-36_001
+    3300068: chunk_6_-37_001
+    3300070: chunk_6_-38_001
+    4300000: chunk_6_-35_001
+    4300002: chunk_2_-34_001
+    4300004: chunk_5_-33_001
+    4300006: chunk_3_-37_001
+    4300008: chunk_3_-35_001
+    4300010: chunk_4_-35_001
+    4300012: chunk_4_-34_001
+    4300014: chunk_2_-36_001
+    4300016: chunk_4_-38_001
+    4300018: chunk_5_-36_001
+    4300020: chunk_6_-36_001
+    4300022: chunk_5_-35_001
+    4300024: chunk_4_-36_001
+    4300026: chunk_6_-33_001
+    4300028: chunk_2_-37_001
+    4300030: chunk_3_-38_001
+    4300032: chunk_6_-37_001
+    4300034: chunk_1_-38_001
+    4300036: chunk_5_-38_001
+    4300038: chunk_3_-34_001
+    4300040: chunk_4_-33_001
+    4300042: chunk_5_-37_001
+    4300044: chunk_3_-33_001
+    4300046: chunk_5_-34_001
+    4300048: chunk_4_-37_001
+    4300050: chunk_2_-35_001
+    4300052: chunk_6_-34_001
+    4300054: chunk_1_-33_001
+    4300056: chunk_3_-36_001
+    4300058: chunk_2_-38_001
+    4300060: chunk_1_-35_001
+    4300062: chunk_1_-37_001
+    4300064: chunk_2_-33_001
+    4300066: chunk_1_-36_001
+    4300068: chunk_6_-38_001
+    4300070: chunk_1_-34_001
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: clay_001__clay_png
+    second: {fileID: 2100000, guid: 50040bba47a71684290bde9e1a4c8800, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: coal_ore_001__coal_ore_png
+    second: {fileID: 2100000, guid: 0f9d62f9b09d14e45939e1b2ab881b27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dirt_001__dirt_png
+    second: {fileID: 2100000, guid: 8077ce879152a9a40b572421e28e9b55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dirt_grass_side_001__dirt_grass_side_png
+    second: {fileID: 2100000, guid: 032a7a804c348e54d830744db94b1707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dirt_grass_top_001__dirt_grass_top_png
+    second: {fileID: 2100000, guid: bd5897fead23f2d4ab00deb8e25746c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flower_yellow_001__flower_yellow_png
+    second: {fileID: 2100000, guid: 171d75870858864488fc9479a0912239, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: furnace_front_001__furnace_front_png
+    second: {fileID: 2100000, guid: 2e8331a8d6b653846b8d201e5de78cee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: furnace_side_001__furnace_side_png
+    second: {fileID: 2100000, guid: 27fc4b30d58a23148a368899272c9080, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: furnace_top_001__furnace_top_png
+    second: {fileID: 2100000, guid: 1e759571b9c47bb46b49d13aaf8ac599, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gravel_001__gravel_png
+    second: {fileID: 2100000, guid: c003798cc5e8b7940955bc874af1540b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iron_ore_001__iron_ore_png
+    second: {fileID: 2100000, guid: 4879640db92633f4cb168a5d454e3e6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: largechest_001__largechest_png
+    second: {fileID: 2100000, guid: 52309546cc99f91419cc7f95acaaf18f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leaves_oak_001__leaves_oak_png
+    second: {fileID: 2100000, guid: 52b455579800b4c4da517692246e76e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: log_oak_side_001__log_oak_side_png
+    second: {fileID: 2100000, guid: 23aba0314dde64e44a86eeb49b3743d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: log_oak_top_001__log_oak_top_png
+    second: {fileID: 2100000, guid: 0afe83430641df246a4ec1acf3a02c31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: obsidian_001__obsidian_png
+    second: {fileID: 2100000, guid: 5843971c5415d834187748a0754f1b22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plank_oak_001__plank_oak_png
+    second: {fileID: 2100000, guid: b761abd8d118a874cb0a4613a7708d7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sand_001__sand_png
+    second: {fileID: 2100000, guid: aa3314ba3ac5e9e418e21a7ddfe42762, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sandstone_bottom_001__sandstone_bottom_png
+    second: {fileID: 2100000, guid: 83db7cd2188be8247bf33e359fde088d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sandstone_side_001__sandstone_side_png
+    second: {fileID: 2100000, guid: 360f14cda40cc89489455f008f77efeb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sandstone_top_001__sandstone_top_png
+    second: {fileID: 2100000, guid: 983c45dd5f36a8845bf752a4728f8ecc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sapling_oak_001__sapling_oak_png
+    second: {fileID: 2100000, guid: b458822441bbab84f99ea32392478b78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sign_001__sign_png
+    second: {fileID: 2100000, guid: ff1c21c3ed9aaa942ad22724c06ee9d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_001__stone_png
+    second: {fileID: 2100000, guid: 5929866caea3eed4b9a2c1df8ea7b0f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_andesite_001__stone_andesite_png
+    second: {fileID: 2100000, guid: 11f39d8a0865be54bb36356862a523aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_diorite_001__stone_diorite_png
+    second: {fileID: 2100000, guid: b038b6e5aeba66d48b402d3fe4115d4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_granite_001__stone_granite_png
+    second: {fileID: 2100000, guid: 3548153d089933d429a31facd469ce2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: torch_001__torch_png
+    second: {fileID: 2100000, guid: 946f986a865a8704fa4819c31317f907, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: torch_flame_001__torch_flame_png
+    second: {fileID: 2100000, guid: d60dba724ddc9cb4bbea62f85d62857f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: water_001__water_png
+    second: {fileID: 2100000, guid: 09ed50d83c6a33346ae610071d068931, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: workbench_back_001__workbench_back_png
+    second: {fileID: 2100000, guid: 6d6d3522aaff6214e8ed72909f4fd1ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: workbench_front_001__workbench_front_png
+    second: {fileID: 2100000, guid: e1ef0410c37870c4694decc795a9a1d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: workbench_top_001__workbench_top_png
+    second: {fileID: 2100000, guid: ee13179fa8c3f1a45a30e0b87fbc94e3, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

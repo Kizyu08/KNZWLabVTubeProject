@@ -79,6 +79,8 @@ public class KinectAvatar : MonoBehaviour
             //Kinectの関節回転情報をUnityのクォータニオンに変換
             if (IsMirror)
             {
+                
+
                 SpineBase =
                   joints[JointType.SpineBase].Orientation.ToMirror().ToQuaternion(comp);
                 SpineMid =
