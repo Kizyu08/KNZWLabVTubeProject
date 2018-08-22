@@ -71,6 +71,8 @@ public class KinectAvatar : MonoBehaviour
         Quaternion comp2;
         CameraSpacePoint pos;
 
+        Quaternion debug = new Quaternion();
+
         // 関節の回転を取得する
         if (body != null)
         {
@@ -162,6 +164,33 @@ public class KinectAvatar : MonoBehaviour
                   joints[JointType.AnkleRight].Orientation.ToQuaternion(comp);
                   
             }
+
+            //debug----------------------------------------------------------
+            //SpineBase = debug;
+            //SpineMid = debug;
+
+            //Head = debug;
+            //Neck = debug;
+
+            //SpineShoulder = debug;
+
+            //ShoulderLeft = debug;
+            //ShoulderRight = debug;
+
+            //ElbowLeft = debug;
+            //WristLeft = debug;
+            //HandLeft = debug;
+
+            //ElbowRight = debug;
+            //WristRight = debug;
+            //HandRight = debug;
+
+            //KneeLeft = debug;
+            //AnkleLeft = debug;
+
+            //KneeRight = debug;
+            //AnkleRight = debug;
+            //_debug---------------------------------------------------------
 
             print("ElbowLeft x:" + ElbowLeft.x + " y" + ElbowLeft.y + " z:" + ElbowLeft.z + " w:" + ElbowLeft.w);
             print("Neck x:" + Neck.x + " y" + Neck.y + " z:" + Neck.z + " w:" + Neck.w);
