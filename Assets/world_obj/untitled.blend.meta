@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 4843ca6476dbd2f40a9b6a71121e6abe
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: chunk_1_-33_001
     100002: chunk_1_-34_001
@@ -220,6 +220,7 @@ ModelImporter:
     4300070: chunk_1_-34_001
     7400000: Default Take
     9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -436,6 +437,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
