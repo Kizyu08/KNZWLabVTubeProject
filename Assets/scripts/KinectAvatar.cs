@@ -73,6 +73,13 @@ public class KinectAvatar : MonoBehaviour
 
         Quaternion debug = new Quaternion();
 
+        LogSave ls = GetComponent<LogSave>();
+        if (Input.GetKey(KeyCode.E))
+        {
+            ls.logSave("test");
+            ls.logSave("test2");
+        }
+        
         // 関節の回転を取得する
         if (body != null)
         {
@@ -165,35 +172,8 @@ public class KinectAvatar : MonoBehaviour
                   
             }
 
-            //debug----------------------------------------------------------
-            //SpineBase = debug;
-            //SpineMid = debug;
-
-            //Head = debug;
-            //Neck = debug;
-
-            //SpineShoulder = debug;
-
-            //ShoulderLeft = debug;
-            //ShoulderRight = debug;
-
-            //ElbowLeft = debug;
-            //WristLeft = debug;
-            //HandLeft = debug;
-
-            //ElbowRight = debug;
-            //WristRight = debug;
-            //HandRight = debug;
-
-            //KneeLeft = debug;
-            //AnkleLeft = debug;
-
-            //KneeRight = debug;
-            //AnkleRight = debug;
-            //_debug---------------------------------------------------------
-
-            print("ElbowLeft x:" + ElbowLeft.x + " y" + ElbowLeft.y + " z:" + ElbowLeft.z + " w:" + ElbowLeft.w);
-            print("Neck x:" + Neck.x + " y" + Neck.y + " z:" + Neck.z + " w:" + Neck.w);
+            //print("ElbowLeft x:" + ElbowLeft.x + " y" + ElbowLeft.y + " z:" + ElbowLeft.z + " w:" + ElbowLeft.w);
+            //print("Neck x:" + Neck.x + " y" + Neck.y + " z:" + Neck.z + " w:" + Neck.w);
 
             // 関節の回転を計算する 
             q = transform.rotation;
@@ -216,10 +196,12 @@ public class KinectAvatar : MonoBehaviour
             RightLeg.transform.rotation = AnkleRight * comp2;
 
             LeftUpLeg.transform.rotation = KneeLeft *
-                            Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+                            Quaternion.AngleAxis(-90, new Vector3(0, 0, 1))
+                            * Quaternion.AngleAxis(-90, new Vector3(1, 0, 0));
 
             LeftLeg.transform.rotation = AnkleLeft *
-                            Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+                            Quaternion.AngleAxis(-90, new Vector3(0, 0, 1))
+                            * Quaternion.AngleAxis(-90, new Vector3(1, 0, 0));
 
             GoHead.transform.rotation = Head * comp2;
             GoNeck.transform.rotation = Neck * comp2;
@@ -232,6 +214,36 @@ public class KinectAvatar : MonoBehaviour
             Ref.transform.position = new Vector3(-pos.X*PosScale, pos.Y*PosScale, -pos.Z*PosScale);
             
         }
+        
+        ////debug----------------------------------------------------------
+        //// 関節の回転を計算する 
+        //q = transform.rotation;
+        //transform.rotation = Quaternion.identity;
+
+        //comp2 = Quaternion.AngleAxis(90, new Vector3(0, 1, 0)) *
+        //                 Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+
+        //Spine1.transform.rotation =  comp2;
+
+        //RightArm.transform.rotation =  comp2;
+        //RightForeArm.transform.rotation =  comp2;
+        //RightHand.transform.rotation =  comp2;
+
+        //LeftArm.transform.rotation =  comp2;
+        //LeftForeArm.transform.rotation =  comp2;
+        //LeftHand.transform.rotation =  comp2;
+
+        //RightUpLeg.transform.rotation =  comp2;
+        //RightLeg.transform.rotation =  comp2;
+
+        //LeftUpLeg.transform.rotation = Quaternion.AngleAxis(-90, new Vector3(0, 0, 1)) * Quaternion.AngleAxis(-90, new Vector3(1, 0, 0));
+        //LeftLeg.transform.rotation = Quaternion.AngleAxis(-90, new Vector3(0, 0, 1)) * Quaternion.AngleAxis(-90, new Vector3(1, 0, 0));
+
+        //GoHead.transform.rotation =  comp2;
+        //GoNeck.transform.rotation =  comp2;
+        //// モデルの回転を設定する
+        //transform.rotation = q;
+        ////_debug---------------------------------------------------------
     }
 }
 

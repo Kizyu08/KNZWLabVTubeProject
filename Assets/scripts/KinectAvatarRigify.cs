@@ -201,25 +201,25 @@ public class KinectAvatarRigify : MonoBehaviour
 
             comp2 =Quaternion.AngleAxis(90, new Vector3(0, 1, 0)) *
                              Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+            Quaternion compRLeg = Quaternion.AngleAxis(-180, new Vector3(1, 0, 0));
+            Quaternion compRArm = Quaternion.AngleAxis(-90, new Vector3(1, 0, 0));
+            Quaternion compLArm = Quaternion.AngleAxis(90, new Vector3(1, 0, 0));
 
-            Spine1.transform.rotation = SpineMid * comp2;
+            Spine1.transform.rotation = comp2;
 
-            RightArm.transform.rotation = ElbowRight * comp2;
-            RightForeArm.transform.rotation = WristRight * comp2;
-            RightHand.transform.rotation = HandRight * comp2;
+            RightArm.transform.rotation = comp2 * compRArm;
+            RightForeArm.transform.rotation = comp2 * compRArm;
+            RightHand.transform.rotation = comp2 * compRArm;
 
-            LeftArm.transform.rotation = ElbowLeft * comp2;
-            LeftForeArm.transform.rotation = WristLeft * comp2;
-            LeftHand.transform.rotation = HandLeft * comp2;
+            LeftArm.transform.rotation = comp2 * compLArm;
+            LeftForeArm.transform.rotation = comp2 * compLArm;
+            LeftHand.transform.rotation = comp2 * compLArm;
 
-            RightUpLeg.transform.rotation = KneeRight * comp2;
-            RightLeg.transform.rotation = AnkleRight * comp2;
+            RightUpLeg.transform.rotation = comp2 * compRLeg;
+            RightLeg.transform.rotation = comp2 * compRLeg;
 
-            LeftUpLeg.transform.rotation = KneeLeft *
-                            Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
-
-            LeftLeg.transform.rotation = AnkleLeft *
-                            Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+            LeftUpLeg.transform.rotation = Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+            LeftLeg.transform.rotation = Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
 
             GoHead.transform.rotation = Head * comp2;
             GoNeck.transform.rotation = Neck * comp2;
@@ -232,6 +232,38 @@ public class KinectAvatarRigify : MonoBehaviour
             Ref.transform.position = new Vector3((-pos.X+1)*PosScale, pos.Y*PosScale, -pos.Z*PosScale);
             
         }
+        //debug----------------------------------------------------------
+        // 関節の回転を計算する 
+        //q = transform.rotation;
+        //transform.rotation = Quaternion.identity;
+
+        //comp2 = Quaternion.AngleAxis(180, new Vector3(0, 1, 0)) *
+        //                 Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+        //Quaternion compRLeg = Quaternion.AngleAxis(-180, new Vector3(1, 0, 0));
+        //Quaternion compRArm = Quaternion.AngleAxis(-90, new Vector3(1, 0, 0));
+        //Quaternion compLArm = Quaternion.AngleAxis(90, new Vector3(1, 0, 0));
+
+        //Spine1.transform.rotation = comp2;
+
+        //RightArm.transform.rotation = comp2 * compRArm;
+        //RightForeArm.transform.rotation = comp2 * compRArm;
+        //RightHand.transform.rotation = comp2 * compRArm;
+
+        //LeftArm.transform.rotation = comp2 * compLArm;
+        //LeftForeArm.transform.rotation = comp2 * compLArm;
+        //LeftHand.transform.rotation = comp2 * compLArm;
+
+        //RightUpLeg.transform.rotation = comp2 * compRLeg;
+        //RightLeg.transform.rotation = comp2 * compRLeg;
+
+        //LeftUpLeg.transform.rotation = Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+        //LeftLeg.transform.rotation = Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+
+        //GoHead.transform.rotation = comp2;
+        //GoNeck.transform.rotation = comp2;
+        //// モデルの回転を設定する
+        //transform.rotation = q;
+        //_debug---------------------------------------------------------
     }
 }
 
