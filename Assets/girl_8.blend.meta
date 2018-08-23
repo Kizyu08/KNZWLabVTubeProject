@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 2dcb072d8619fdc40bb63690d5cc0927
+guid: 88f6483c3b2566f45b32942bbe6a1882
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: body_001
+    100000: body_000
     100002: breast_L
     100004: breast_R
     100006: forearm_L
@@ -25,7 +25,7 @@ ModelImporter:
     100038: thigh_R
     100040: upper_arm_L
     100042: upper_arm_R
-    400000: body_001
+    400000: body_000
     400002: breast_L
     400004: breast_R
     400006: forearm_L
@@ -48,16 +48,17 @@ ModelImporter:
     400040: upper_arm_L
     400042: upper_arm_R
     2100000: skin
-    2100002: "\u9AEA"
-    2100004: clothing
-    2100006: "\u9AEA_050"
+    2100002: hair
+    2100004: eyes
+    2100006: clothing
     2100008: "\u9AEA_061"
-    2100010: "\u9AEA_002"
-    4300000: body_001
+    2100010: "\u9AEA_050"
+    2100012: hair_001
+    4300000: body_000
     7400000: Default Take
     7400002: metarigAction
     9500000: //RootNode
-    13700000: body_001
+    13700000: body_000
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
