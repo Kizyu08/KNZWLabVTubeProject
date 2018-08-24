@@ -49,8 +49,8 @@ public class AvatarDataMp
     // 同時に表示する人数
     public const int MAX_PLAYERS = 3;
 
-    // アバターの種類
-    public const int KIND_AVATARS = 4;
+    // アバターの種類　※Unityちゃん含む
+    public const int KIND_AVATARS = 5;
 
     // 各アバターの関節データ
     public JointsDataMp[,] jointsData;
@@ -169,7 +169,7 @@ public class AvatarDataMp
         {
             for(int j = 0; j < KIND_AVATARS; j++)
             {
-                jointsData[i, j].Joints[0].transform.position = new Vector3(9999, 9999, 9999);
+                jointsData[i, j].Joints[0].transform.position = new Vector3(999, 999, 999);
                   
             }
         }
@@ -319,6 +319,8 @@ public class KinectAvatarMp : MonoBehaviour
 
         Quaternion q;
         Quaternion comp2;
+        Quaternion compNeck;
+        Quaternion compBody;
         Quaternion compRLeg;
         Quaternion compRArm;
         Quaternion compLArm;
@@ -484,6 +486,7 @@ public class KinectAvatarMp : MonoBehaviour
                 // そうしないと回転が正しくても動いた際にめり込んだり等、
                 // 各部位がカオスなことになる。
                 // 尚、この処理はキャラの向いている方向が判るなら不要となる（たぶん）。
+                
                 if (IsMirror)
                 {
                     Swap<Quaternion>(ref ShoulderLeft, ref ShoulderRight);  // 肩
@@ -493,6 +496,7 @@ public class KinectAvatarMp : MonoBehaviour
                     Swap<Quaternion>(ref KneeLeft, ref KneeRight);          // 膝
                     Swap<Quaternion>(ref AnkleLeft, ref AnkleRight);        // 足首
                 }
+                
             }
 
 
@@ -509,9 +513,14 @@ public class KinectAvatarMp : MonoBehaviour
 
             comp2 = Quaternion.AngleAxis(90, new Vector3(0, 1, 0)) *
                                 Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+            compNeck = Quaternion.AngleAxis(180, new Vector3(0, 1, 0))
+                        * Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
+            compBody = Quaternion.AngleAxis(180, new Vector3(0, 1, 0))
+                        * Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
             compRLeg = Quaternion.AngleAxis(-180, new Vector3(1, 0, 0));
             compRArm = Quaternion.AngleAxis(-90, new Vector3(1, 0, 0));
             compLArm = Quaternion.AngleAxis(90, new Vector3(1, 0, 0));
+
 
             if (avatarData.isRigify[playerNum, avatarTypeOfPlayer[playerNum]] == false)
             {
@@ -537,7 +546,7 @@ public class KinectAvatarMp : MonoBehaviour
             }
             else
             {
-                avatarData.jointsData[playerNum, avatarTypeOfPlayer[playerNum]].Joints[(int)JointsDataMp.JOINTS_IDX.SPINE1].transform.rotation = SpineMid * comp2;
+                avatarData.jointsData[playerNum, avatarTypeOfPlayer[playerNum]].Joints[(int)JointsDataMp.JOINTS_IDX.SPINE1].transform.rotation = SpineMid * compBody;
 
                 avatarData.jointsData[playerNum, avatarTypeOfPlayer[playerNum]].Joints[(int)JointsDataMp.JOINTS_IDX.RIGHT_ARM].transform.rotation = ElbowRight * comp2 * compRArm;
                 avatarData.jointsData[playerNum, avatarTypeOfPlayer[playerNum]].Joints[(int)JointsDataMp.JOINTS_IDX.RIGHT_FORE_ARM].transform.rotation = WristRight * comp2 * compRArm;
@@ -553,8 +562,8 @@ public class KinectAvatarMp : MonoBehaviour
                 avatarData.jointsData[playerNum, avatarTypeOfPlayer[playerNum]].Joints[(int)JointsDataMp.JOINTS_IDX.LEFT_UP_LEG].transform.rotation = KneeLeft * Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
                 avatarData.jointsData[playerNum, avatarTypeOfPlayer[playerNum]].Joints[(int)JointsDataMp.JOINTS_IDX.LEFT_LEG].transform.rotation = AnkleLeft * Quaternion.AngleAxis(-90, new Vector3(0, 0, 1));
 
-                avatarData.jointsData[playerNum, avatarTypeOfPlayer[playerNum]].Joints[(int)JointsDataMp.JOINTS_IDX.HEAD].transform.rotation = Head * comp2;
-                avatarData.jointsData[playerNum, avatarTypeOfPlayer[playerNum]].Joints[(int)JointsDataMp.JOINTS_IDX.NECK].transform.rotation = Neck * comp2;
+                avatarData.jointsData[playerNum, avatarTypeOfPlayer[playerNum]].Joints[(int)JointsDataMp.JOINTS_IDX.HEAD].transform.rotation = Head * compNeck;
+                avatarData.jointsData[playerNum, avatarTypeOfPlayer[playerNum]].Joints[(int)JointsDataMp.JOINTS_IDX.NECK].transform.rotation = Neck * compNeck;
 
             }
 

@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: 6d00341f004b8984197004b2a8550970
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: breast_L
+    100002: breast_R
+    100004: Curve_050
+    100006: forearm_L
+    100008: forearm_R
+    100010: metarig_001
+    100012: pelvis_L
+    100014: pelvis_R
+    100016: //RootNode
+    100018: shin_L
+    100020: shin_R
+    100022: shoulder_L
+    100024: shoulder_R
+    100026: spine
+    100028: spine_001
+    100030: spine_002
+    100032: spine_003
+    100034: spine_004
+    100036: thigh_L
+    100038: thigh_R
+    100040: upper_arm_L
+    100042: upper_arm_R
+    400000: breast_L
+    400002: breast_R
+    400004: Curve_050
+    400006: forearm_L
+    400008: forearm_R
+    400010: metarig_001
+    400012: pelvis_L
+    400014: pelvis_R
+    400016: //RootNode
+    400018: shin_L
+    400020: shin_R
+    400022: shoulder_L
+    400024: shoulder_R
+    400026: spine
+    400028: spine_001
+    400030: spine_002
+    400032: spine_003
+    400034: spine_004
+    400036: thigh_L
+    400038: thigh_R
+    400040: upper_arm_L
+    400042: upper_arm_R
+    2100000: SVGMat_036
+    2100002: SVGMat_104
+    2100004: SVGMat_103
+    2100006: SVGMat_102
+    2100008: SVGMat_101
+    2100010: SVGMat_100
+    2100012: SVGMat_099
+    2100014: SVGMat_098
+    2100016: SVGMat_097
+    2100018: SVGMat_096
+    2100020: SVGMat_095
+    2100022: SVGMat_094
+    2100024: SVGMat_093
+    2100026: SVGMat_092
+    2100028: SVGMat_091
+    2100030: SVGMat_090
+    2100032: SVGMat_089
+    2100034: SVGMat_088
+    2100036: SVGMat_086
+    2100038: SVGMat_085
+    2100040: SVGMat_084
+    2100042: SVGMat_083
+    2100044: SVGMat_077
+    2100046: SVGMat_076
+    2100048: SVGMat_075
+    2100050: SVGMat_074
+    2100052: SVGMat_073
+    2100054: SVGMat_072
+    2100056: SVGMat_071
+    2100058: SVGMat_070
+    2100060: SVGMat_069
+    2100062: SVGMat_068
+    2100064: SVGMat_067
+    2100066: SVGMat_066
+    2100068: SVGMat_065
+    2100070: SVGMat_064
+    2100072: SVGMat_063
+    2100074: SVGMat_062
+    2100076: SVGMat_061
+    2100078: SVGMat_060
+    2100080: SVGMat_059
+    2100082: SVGMat_058
+    2100084: SVGMat_057
+    2100086: SVGMat_056
+    2100088: SVGMat_055
+    2100090: SVGMat_054
+    2100092: SVGMat_053
+    2100094: SVGMat_052
+    2100096: SVGMat_051
+    2100098: SVGMat_050
+    2100100: SVGMat_049
+    2100102: SVGMat_048
+    2100104: SVGMat_047
+    2100106: SVGMat_046
+    2100108: SVGMat_045
+    2100110: SVGMat_044
+    2100112: SVGMat_043
+    2100114: SVGMat_042
+    2100116: SVGMat_041
+    2100118: SVGMat_040
+    2100120: SVGMat_039
+    2100122: SVGMat_038
+    2100124: SVGMat_037
+    2100126: SVGMat_035
+    2100128: SVGMat_034
+    2100130: SVGMat_033
+    2100132: SVGMat_032
+    2100134: SVGMat_031
+    2100136: SVGMat_028
+    2100138: SVGMat_027
+    2100140: SVGMat_026
+    2100142: SVGMat_025
+    2100144: SVGMat_024
+    2100146: SVGMat_023
+    2100148: SVGMat_022
+    2100150: SVGMat_017
+    2100152: SVGMat_016
+    2100154: SVGMat_013
+    2100156: SVGMat_012
+    2100158: SVGMat_011
+    2100160: SVGMat_010
+    2100162: SVGMat_009
+    2100164: SVGMat_007
+    2100166: SVGMat_006
+    2100168: SVGMat_005
+    2100170: SVGMat_002
+    4300000: Curve_050
+    7400000: Default Take
+    9500000: //RootNode
+    13700000: Curve_050
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
